@@ -153,4 +153,4 @@ bot.on('messageDelete' , deleted => {
   else return;
 })
 
-bot.login(`${process.env.token}`);
+bot.login(process.env.token);
