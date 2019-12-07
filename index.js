@@ -153,4 +153,4 @@ bot.on('messageDelete' , deleted => {
   else return;
 })
 
-bot.login('NTY3MTM2NTk0NDk1MTQzOTg3.XLRkQw.1zNhDGYV1JgwPJzz6cc6pGFTFXA');
+bot.login(`${process.env.token}`);
