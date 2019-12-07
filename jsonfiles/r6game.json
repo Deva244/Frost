@@ -1,0 +1,477 @@
+{
+  "Attackers":{
+    "0":"<:recruitblue:576905322254303272> Recruit",
+    "1":"<:glaz:576894487301849100> Glaz",
+    "2":"<:fuze:576894492209053696> Fuze",
+    "3":"<:iq:576894486114861056> IQ",
+    "4":"<:blitz:576894471023755271> Blitz",
+    "5":"<:twitch:576894498865414155> Twitch",
+    "6":"<:montagne:576894487343923220> Montagne",
+    "7":"<:thermite:576894488811798528> Thermite",
+    "8":"<:ash:576894477281525771> Ash",
+    "9":"<:thatcher:576894486865772564> Thatcher",
+    "10":"<:sledge:576894486165192715> Sledge",
+    "11":"<:buck:576894470465912863> Buck",
+    "12":"<:blackbeard:576894470373769226> BlackBeard",
+    "13":"<:hibana:576894481421434899> Hibana",
+    "14":"<:capitao:576894474429661194> Capitao",
+    "15":"<:jackal:576894485196177418> Jackal",
+    "16":"<:ying:576894497800323072> Ying",
+    "17":"<:zofia:576894507023597568> Zofia",
+    "18":"<:dokkaebi:576894505941204996> Dokkaebi",
+    "19":"<:lion:576894506025091073> Lion",
+    "20":"<:finka:576894505773694977> Finka",
+    "21":"<:maverick:576894515714195477> Maverick",
+    "22":"<:nomad:576894507610800151> Nomad",
+    "23":"<:gridlock:576905327258370049> Gridlock"
+  },
+  "Defenders":{
+    "0":"<:recruitblue:576905322254303272> Recruit",
+    "1":"<:kapkan:576894488660803614> Kapkan",
+    "2":"<:tachanka:576894486458925057> Tachanka",
+    "3":"<:bandit:576894469941493770> Bandit",
+    "4":"<:jager:576894496445300756> Jager",
+    "5":"<:rook:576894544726065153> Rook",
+    "6":"<:doc:576894477025935362> Doc",
+    "7":"<:pulse:576894486299410481> Pulse",
+    "8":"<:castle:576894474991566868> Castle",
+    "9":"<:smoke:576894488912592896> Smoke",
+    "10":"<:mute:576894484260978690> Mute",
+    "11":"<:frost:576894486286958633> Frost",
+    "12":"<:valkyrie:576894486953590785> Valkyrie",
+    "13":"<:echo:576894472420589574> Echo",
+    "14":"<:caveira:576894487771742248> Caveira",
+    "15":"<:mira:576894482948292638> Mira",
+    "16":"<:lesion:576894497754185748> Lesion",
+    "17":"<:ela:576894479190196244> Ela",
+    "18":"<:vigil:576894520210489354> Vigil",
+    "19":"<:maestro:576894506771808269> Maestro",
+    "20":"<:alibi:576894469761269770> Alibi",
+    "21":"<:clash:576894504632582145>' Clash",
+    "22":"<:kaid:576894487503175680>Kaid",
+    "23":"<:mozzie:576905335428612106> Mozzie"
+  },
+  "gamemodes":{
+    "1":"Bomb",
+    "2":"Secure Area",
+    "3":"Hostage"
+  },
+  "maps":{
+    "1":"House",
+    "2":"Oregon",
+    "3":"Bank",
+    "4":"Favela",
+    "5":"Yacht",
+    "6":"Tower",
+    "7":"Consulate",
+    "8":"Villa",
+    "9":"Coastline",
+    "10":"Kanal",
+    "11":"Kafe Dostoyevsky",
+    "12":"Plane",
+    "13":"Skyscrapper",
+    "14":"Chalet",
+    "15":"Hereford",
+    "16":"Club House",
+    "17":"Border",
+    "18":"Theme Park"
+  },
+  "objective":{
+    "1":{
+      "1":{
+        "1":"[B] Garage and Training Room",
+        "2":"[1F] Living Rooom and [B] Training Room",
+        "3":"[2F] Kid's Bedroom and Workshop"
+      },
+      "2":{
+        "1":"[B] Garage",
+        "2":"[1F] Living Room",
+        "3":"[2F] Kid's Bedroom",
+        "4":"[2F] Master Bedroom"
+      },
+      "3":{
+        "1":"[B] Laundry Room",
+        "2":"[1F] Dinning Room",
+        "3":"[2F] Master Bedroom",
+        "4":"[2F] Workshop"
+      },
+      "4":{
+        "1":"Basement",
+        "2":"1st floor",
+        "3":"2nd floor"
+      },
+      "5":{
+        "1":{
+          "1":"Garage",
+          "2":"Basement Stairs"
+        },
+        "2":{
+          "1":"Main Lobby",
+          "2":"Back Entrance",
+          "3":"Office",
+          "4":"Dining Room",
+          "5":"Living Room"
+        },
+        "3":{
+          "1":"Bathroom",
+          "2":"Side Stairs",
+          "3":"Kid's Bedroom",
+          "4":"Master Bedroom",
+          "5":"Workshop"
+        }
+      }
+    }
+  },
+  "victory":{
+    "1":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "2":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "3":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "4":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "5":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "6":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "7":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "8":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "9":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "10":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "11":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "12":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "13":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "14":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "15":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "16":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "17":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "18":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "19":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "20":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "21":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "22":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "23":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "24":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "25":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "26":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "27":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "28":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "29":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "30":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "31":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "32":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "33":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "34":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "35":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "36":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "37":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "38":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "39":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "40":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "41":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "42":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "43":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "44":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "45":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "46":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "47":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "48":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "49":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    },
+    "50":{
+      "name":"",
+      "side":"",
+      "quote":"",
+      "image":"",
+      "color":""
+    }
+  }
+}
