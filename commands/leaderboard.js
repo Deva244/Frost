@@ -49,7 +49,7 @@ module.exports.run = async (bot , msg , args) => {
         body[num].p_maxrank = 21;
         body[num].p_currentrank = 21;
       }
-      embed.addField(body[num].position + ' - ' + body[num].p_name , '**Level: **' + body[num].p_level + ' - ' + '**K/D: **' + (body[num].kd / 100)
+      embed.addField(`**${body[num].position}.  ${body[num].p_name}**` , '**Level: **' + body[num].p_level + ' - ' + '**K/D: **' + (body[num].kd / 100)
       + ' - ' + '**Rank: **' + ranks[body[num].p_currentrank] + ` **${body[num].p_currentmmr}**`);
       num += 1;
     }
