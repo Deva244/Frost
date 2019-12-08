@@ -6,9 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "12.13.1"
-  },
   "keywords": [],
   "author": "Deva",
   "license": "ISC",
