@@ -5,6 +5,7 @@ const fs = require('fs');
 const Activity = require('./models/activity.js');
 const mongoose = require('mongoose');
 let dburl = process.env.DBLink;
+console.log(dburl);
 mongoose.connect(dburl , {
   useNewUrlParser: true,
   useUnifiedTopology: true
