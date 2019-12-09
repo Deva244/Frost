@@ -24,8 +24,27 @@ fs.readdir("./commands" , (err , files) => {
 });
 
 bot.on('ready', () => {
-  bot.user.setActivity(`${activity.activity}` , { type : `${activity.type}` })
   console.log(`Frost Bot is online!`);
+  let act , actType;
+  Activity.findOne({
+    userID: "198426222810628106"
+  }, (err , activity) => {
+    if (err) console.log(err);
+    if (!activity) {
+      const newActivity = new Activity({
+        userID : "198426222810628106",
+        activity : "!help",
+        type : "PLAYING"
+      })
+      newActivity.save().catch(err => console.log(err));
+      act = newActivity.activity , actType = newActivity.type;
+    }
+    else {
+      act = activity.activity;
+      actType = activity.type;
+    }
+    bot.user.setActivity(`${act}` , { type : `${actType}` })
+  })
  });
 
 bot.on('guildMemberAdd' , member => {
