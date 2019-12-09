@@ -4,9 +4,7 @@ const bot = new Discord.Client();
 const fs = require('fs');
 const Activity = require('./models/activity.js');
 const mongoose = require('mongoose');
-let DBusername = process.env.DBusername , DBpass = process.env.DBpass;
-console.log(DBusername , DBpass);
-let dburl = 'mongodb+srv://' + DBusername + ':' + DBpass + '@frost-bot-db-cxybp.mongodb.net/Frost';
+let dburl = `mongodb+srv://${process.env.DBusername}:${process.env.DBpass}@frost-bot-db-cxybp.mongodb.net/Frost`;
 mongoose.connect(dburl , {
   useNewUrlParser: true,
   useUnifiedTopology: true
