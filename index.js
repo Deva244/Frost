@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { Client , RichEmbed , Attachment } = require('discord.js');
 const bot = new Discord.Client();
 const fs = require('fs');
-const Activity = require('./modesl/activity.js');
+const Activity = require('./models/activity.js');
 const mongoose = require('mongoose');
 let dburl = 'mongodb+srv://Deva244:0164231199mM@frost-bot-db-cxybp.mongodb.net/Frost';
 mongoose.connect(dburl , {
