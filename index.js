@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const fs = require('fs');
 const Activity = require('./models/activity.js');
 const mongoose = require('mongoose');
-let dburl = process.env.DBLink;
+let dburl = 'mongodb+srv://Deva244:0164231199mM@frost-bot-db-cxybp.mongodb.net/Frost';
 console.log(dburl);
 mongoose.connect(dburl , {
   useNewUrlParser: true,
