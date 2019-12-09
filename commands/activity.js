@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 module.exports.run = (bot , msg , args) => {
   
-  let dburl = DBLink;
+  let dburl = process.env.DBLink;
   mongoose.connect(dburl , {
     useNewUrlParser: true,
     useUnifiedTopology: true

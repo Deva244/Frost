@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const fs = require('fs');
 const Activity = require('./models/activity.js');
 const mongoose = require('mongoose');
-let dburl = DBLink;
+let dburl = process.env.DBLink;
 mongoose.connect(dburl , {
   useNewUrlParser: true,
   useUnifiedTopology: true
