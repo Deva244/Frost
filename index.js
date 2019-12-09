@@ -2,7 +2,13 @@ const Discord = require('discord.js');
 const { Client , RichEmbed , Attachment } = require('discord.js');
 const bot = new Discord.Client();
 const fs = require('fs');
-const activity = require('./jsonfiles/activity.json');
+const Activity = require('./models/activity.js');
+const mongoose = require('mongoose');
+let dburl = process.env.DBLink;
+mongoose.connect(dburl , {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 bot.commands = new Discord.Collection();
 
@@ -24,8 +30,27 @@ fs.readdir("./commands" , (err , files) => {
 });
 
 bot.on('ready', () => {
-  bot.user.setActivity(`${activity.activity}` , { type : `${activity.type}` })
   console.log(`Frost Bot is online!`);
+  let act , actType;
+  Activity.findOne({
+    userID: "198426222810628106"
+  }, (err , activity) => {
+    if (err) console.log(err);
+    if (!activity) {
+      const newActivity = new Activity({
+        userID : "198426222810628106",
+        activity : "!help",
+        type : "PLAYING"
+      })
+      newActivity.save().catch(err => console.log(err));
+      act = newActivity.activity , actType = newActivity.type;
+    }
+    else {
+      act = activity.activity;
+      actType = activity.type;
+    }
+    bot.user.setActivity(`${act}` , { type : `${actType}` })
+  })
  });
 
 bot.on('guildMemberAdd' , member => {
