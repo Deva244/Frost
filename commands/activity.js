@@ -5,9 +5,8 @@ const mongoose = require('mongoose');
 
 module.exports.run = (bot , msg , args) => {
   
-  let DBusername = process.env.DBusername , DBpass = process.env.DBpass;
-  let dburl = `mongodb+srv://${DBusername}:${DBpass}@frost-bot-db-cxybp.mongodb.net/Frost`;
-    mongoose.connect(dburl , {
+  let dburl = DBLink;
+  mongoose.connect(dburl , {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
