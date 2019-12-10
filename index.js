@@ -80,7 +80,7 @@ bot.on('message', async msg => {
     let rate = randomWhole(1,100);
   
     // JoJo copypasta triggers
-    if (rate >= 70) {
+    if (rate >= 80) {
       if (content.includes('kira')) {
         msg.channel.send(copypasta.kira);
         return;
