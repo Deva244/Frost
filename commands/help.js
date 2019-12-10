@@ -11,6 +11,7 @@ module.exports.run = async (bot , msg , args) => {
   .setThumbnail('https://i.imgur.com/WVaiXAh.png')
   .addField('<:r6icon:584492298012983366> R6' , '!help r6 for the Rainbow six Siege command list')
   .addField('<:othersicon:584495597638385675> Other' , '!help other for the command list')
+  .addField("JoJo" , "!help jojo for the command list")
   .addField('<:modicon:584492529261477888> Moderation' , '!help mod for the Moderation command list');
 
   const helpmod = new Discord.RichEmbed()
