@@ -80,47 +80,49 @@ bot.on('message', async msg => {
     let rate = randomWhole(1,100);
   
     // JoJo copypasta triggers
-    if (rate >= 70 && content.includes('kira')) {
-      msg.channel.send(copypasta.kira);
-      return;
-    }
-    if (rate >= 70 && content.includes("jojo reference") || content.includes('jonathan') || content.includes('dio')) {
-      msg.channel.send(copypasta.reference);
-      return;
-    }
-    if (rate >= 70 && content.includes('approach') || content.includes('closer') || content.includes("beat")) {
-      msg.channel.send(copypasta.approach);
-      return;
-    }
-    if (rate >= 70 && content.includes('rant') || content.includes('venice') || content.includes("france") || content.includes('paris')) {
-      msg.channel.send(copypasta.venice);
-      return;
-    }
-    if (rate >= 70 && content.includes('enemy') || content.includes('stand') || content.includes("care")) {
-      msg.channel.send(copypasta.enemy);
-      return;
-    }
-    if (rate >= 70 && content.includes('heaven') || content.includes('priest') || content.includes("pope") || content.includes('papa')) {
-      msg.channel.send(copypasta.heaven);
-      return;
-    }
-    if (rate >= 70 && content.includes('watch') || content.includes('jojo')) {
-      msg.channel.send(copypasta.jojo);
-      return;
-    }
-    if (rate >= 70 && content.includes('door')) {
-      let embed = new Discord.RichEmbed().setImage('https://i.imgur.com/Hi0YNft.png').setColor('#d7691a');
-      msg.channel.send(embed);
-      return;
-    }
-    if (rate >= 70 && content.includes('yo') || content.includes('rock') || content.includes('angelo')) {
-      let embed = new Discord.RichEmbed().setImage('https://i.imgur.com/NOOhJ9l.jpg').setColor('#8f8e8e');
-      msg.channel.send(embed);
-      return;
-    }
-    if (rate >= 50 && content.includes('torture') || content.includes('dance')) {
-      msg.channel.send('https://youtu.be/AQx_KMoCgJU');
-      return;
+    if (rate >= 70) {
+      if (content.includes('kira')) {
+        msg.channel.send(copypasta.kira);
+        return;
+      }
+      else if (content.includes("jojo reference") || content.includes('jonathan') || content.includes('dio')) {
+        msg.channel.send(copypasta.reference);
+        return;
+      }
+      else if (content.includes('approach') || content.includes('closer') || content.includes("beat")) {
+        msg.channel.send(copypasta.approach);
+        return;
+      }
+      else if (content.includes('rant') || content.includes('venice') || content.includes("france") || content.includes('paris')) {
+        msg.channel.send(copypasta.venice);
+        return;
+      }
+      else if (content.includes('enemy') || content.includes('stand') || content.includes("care")) {
+        msg.channel.send(copypasta.enemy);
+        return;
+      }
+      else if (content.includes('heaven') || content.includes('priest') || content.includes("pope") || content.includes('papa')) {
+        msg.channel.send(copypasta.heaven);
+        return;
+      }
+      else if (content.includes('watch') || content.includes('jojo')) {
+        msg.channel.send(copypasta.jojo);
+        return;
+      }
+      else if (content.includes('door')) {
+        let embed = new Discord.RichEmbed().setImage('https://i.imgur.com/Hi0YNft.png').setColor('#d7691a');
+        msg.channel.send(embed);
+        return;
+      }
+      else if (content.includes('yo') || content.includes('rock') || content.includes('angelo')) {
+        let embed = new Discord.RichEmbed().setImage('https://i.imgur.com/NOOhJ9l.jpg').setColor('#8f8e8e');
+        msg.channel.send(embed);
+        return;
+      }
+      else if (content.includes('torture') || content.includes('dance')) {
+        msg.channel.send('https://youtu.be/AQx_KMoCgJU');
+        return;
+      }
     }
 
     //Bot Mentioned
