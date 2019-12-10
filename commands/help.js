@@ -54,11 +54,25 @@ module.exports.run = async (bot , msg , args) => {
   .addField('meme' , 'Rainbow Six Siege shitposts')
   .addField('info' , "Displays some of the server and user's info")
 
+  let helpjojo = new Discord.RichEmbed()
+  .setAuthor('Frost Help' , 'https://i.imgur.com/IRQnnMf.jpg')
+  .setTitle('JoJo Commands')
+  .setColor('#951dac')
+  .setTimestamp()
+  .setThumbnail('https://i.imgur.com/rriOrMO.jpg')
+  .addField('**Opening**s' , '*!jojo opening* for all the openings')
+  .addField('**Manga**' , '*!jojo manga* for a list of all the manga parts with links to read/download')
+  .addField('**Anime**' , "*!jojo part #* for that part's anime and openings to watch/download")
+  .setFooter('Copypasta triggers everywhere :^)');
+
   if (!args[0]) {
     msg.channel.send(help);
   }
   else if (args[0] == 'other') {
     msg.channel.send(helpother);
+  }
+  else if (args[0] == 'jojo') {
+    msg.channel.send(helpjojo);
   }
   else if (args[0] == 'r6' && !args[1]) {
     msg.channel.send(helpr6);
