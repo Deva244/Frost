@@ -80,7 +80,7 @@ bot.on('message', async msg => {
     let rate = randomWhole(1,100);
   
     // JoJo copypasta triggers
-    if (rate >= 80) {
+    if (rate >= 90) {
       if (content.includes('kira')) {
         msg.channel.send(copypasta.kira);
         return;
@@ -130,12 +130,15 @@ bot.on('message', async msg => {
       await msg.react('603005282150383659');
       if (msg.content.includes('no') || msg.content.includes('ya') || msg.content.includes('u') || msg.content.includes('you') || msg.content.includes('kys')) {
         msg.channel.send('<:nou:571503160464637956>');
+        return;
       }
-      if (msg.content.includes('fuck')) {
+      else if (msg.content.includes('fuck')) {
         msg.channel.send('<:KannaFu:571518019377823757>');
+        return;
       }
-      if (msg.content.includes('tezk')) {
-        msg.channel.send(`${msg.author} tezk enta`)
+      else if (msg.content.includes('tezk')) {
+        msg.channel.send(`${msg.author} tezk enta`);
+        return;
       }
     }
     //F reaction
@@ -143,10 +146,12 @@ bot.on('message', async msg => {
       msg.channel.send('Press F to pay respects.').then(react => {
       react.react('580556814425260053');
     });
+      return;
     }
     // sad reaction
     if (msg.content.includes('sad') || msg.content.includes('Sad') || msg.content.includes('cry') || msg.content.includes('Cry')) {
       msg.react('580556824848105477');
+      return;
     }
     // Balbos Trigger
     if (msg.author.id == '264804785775968259') {
@@ -154,6 +159,7 @@ bot.on('message', async msg => {
       if (num >= 90 && num <= 100) {
         msg.channel.send('Hail Balbos The Almighty AI <:kapp:567347854390067236>');
       }
+      return;
     }
     // Frost Trap Trigger
     if (msg.content.includes('t') && !msg.content.startsWith('!') && !msg.isMentioned('567136594495143987')) {
@@ -162,6 +168,7 @@ bot.on('message', async msg => {
         await msg.react('577249791113953292');
         await msg.channel.send(`**${msg.author.username}** walked into a trap <:Frosty:603005282234138624>`);
       }
+      return;
     }
     // Balyz Trigger
     if (msg.content.includes('balyz')) {
@@ -169,6 +176,7 @@ bot.on('message', async msg => {
       if (num >= 50 && num <= 100) {
         msg.reply('tezk balyz! <:oilup:568181229233504276>');
       }
+      return;
     }
     // Palese Trigger
     if (msg.content.includes('palese')) {
@@ -176,6 +184,7 @@ bot.on('message', async msg => {
       if (num >= 50 && num <= 100) {
         msg.reply('tezk palese! <:oilup:568181229233504276>');
       }
+      return;
     }
     // Self Destruct
     if (msg.content.includes('kill me') || msg.content.includes('end me')) {
@@ -194,6 +203,7 @@ bot.on('message', async msg => {
     // REEE trigger
     if (msg.content.includes('reee')) {
       msg.react('571496623624945664');
+      return;
     }
     // Pls kill trigger
     if (msg.content.startsWith('pls kill')) {
@@ -201,11 +211,13 @@ bot.on('message', async msg => {
       if (num >= 30 && num <= 100) {
         msg.channel.send('<:KannaSip:572034399483461632>');
       }
+      return;
     }
     // No u trigger
     if (msg.content.includes('fuck you') || msg.content.includes('fuck u') || msg.content.includes('fck u')) {
       let nou = randomWhole(1,100);
       if (nou > 50) msg.channel.send('no u');
+      return;
     }
   }
 });
