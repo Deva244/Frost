@@ -89,7 +89,7 @@ module.exports.run = async (bot , msg , args) => {
         'Games : ' + (json.data[14] + json.data[15])
         + '\nWins : ' + json.data[14]
         + '\nLosses : ' + json.data[15]
-        + '\nW/L : ' + (json.data[14] / json.data[15]).toFixed(2) , true)
+        + '\nW/L : ' + parseFloat((json.data[14] / json.data[15]).toFixed(2)) , true)
         .addBlankField()
         .addField('Past Seasons Rank' ,
         '**Health : **' + rank[json.season6rank] + ' ' + json.season6mmr
@@ -100,7 +100,8 @@ module.exports.run = async (bot , msg , args) => {
         + '\n**Grim Sky : **' + rank[json.season11rank] + ' ' + json.season11mmr
         + '\n**Wind Bastion : **' + rank[json.season12rank] + ' ' + json.season12mmr
         + '\n**Burnt Horizon : **' + rank[json.season13rank] + ' ' + json.season13mmr
-        + '\n**Phantom Sight : **' + rank[json.season14rank] + ' ' + json.season14mmr , true)
+        + '\n**Phantom Sight : **' + rank[json.season14rank] + ' ' + json.season14mmr
+        + '\n**Ember Rise : **' + rank[json.season15ank] + ' ' + json.season15mmr , true)
         .addField('Current Season Ranking' ,
         '**Current Rank : **' + rank[json.p_currentrank] + " " + json.p_currentmmr
         + '**\nMax Rank : **' + rank[json.p_maxrank] + " " + json.p_maxmmr , true);
