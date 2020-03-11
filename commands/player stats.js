@@ -101,7 +101,8 @@ module.exports.run = async (bot , msg , args) => {
         + '\n**Wind Bastion : **' + rank[json.season12rank] + ' ' + json.season12mmr
         + '\n**Burnt Horizon : **' + rank[json.season13rank] + ' ' + json.season13mmr
         + '\n**Phantom Sight : **' + rank[json.season14rank] + ' ' + json.season14mmr
-        + '\n**Ember Rise : **' + rank[json.season15rank] + ' ' + json.season15mmr , true)
+        + '\n**Ember Rise : **' + rank[json.season15rank] + ' ' + json.season15mmr
+        + '\n**Shifting Tides : **' + rank[json.season16rank] + ' ' + json.season16mmr , true)
         .addField('Current Season Ranking' ,
         '**Current Rank : **' + rank[json.p_currentrank] + " " + json.p_currentmmr
         + '**\nMax Rank : **' + rank[json.p_maxrank] + " " + json.p_maxmmr , true);
