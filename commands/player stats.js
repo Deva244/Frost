@@ -45,13 +45,13 @@ module.exports.run = async (bot , msg , args) => {
       .setFooter(`All stats are from R6Tab.com - ${json.updatedon.split('<u>').join('</u>').split('</u>')}`)
       .setThumbnail(`https://ubisoft-avatars.akamaized.net/${body.results[0].p_user}/default_146_146.png`)
       .setTimestamp()
-      .addField('*Level*' , `**${json.p_level}**` , true)
-      .addField('<:attacker:592295684141481985> *Favorite Attacker*' , `**${op[json.favattacker]}**` , true)
-      .addField('<:defender:592295683902537730> *Favorite Defender*' , `**${op[json.favdefender]}**` , true)
-      .addField("*Total Time Played*" , (json.data[5] / 60 / 60 + json.data[0] / 60 / 60).toFixed(2) + ' Hours' , true)
-      .addField("*Casual Play Time*" , (json.data[5] / 60 / 60).toFixed(2) + ' Hours' , true)
-      .addField("*Ranked Play Time*" , (json.data[0] / 60 / 60).toFixed(2) + ' Hours' , true)
-      .addField('*General stats*' ,
+      .addField('**Level**' , `**${json.p_level}**` , true)
+      .addField('<:attacker:592295684141481985> **Favorite Attacker**' , `**${op[json.favattacker]}**` , true)
+      .addField('<:defender:592295683902537730> **Favorite Defender**' , `**${op[json.favdefender]}**` , true)
+      .addField("**Total Time Played**" , (json.data[5] / 60 / 60 + json.data[0] / 60 / 60).toFixed(2) + ' Hours' , true)
+      .addField("**Casual Play Time**" , (json.data[5] / 60 / 60).toFixed(2) + ' Hours' , true)
+      .addField("**Ranked Play Time**" , (json.data[0] / 60 / 60).toFixed(2) + ' Hours' , true)
+      .addField('**General stats**' ,
         'Headshots : ' + json.data[17]
         + '\nHS Accuaracy : ' + (json.data[17] / (json.data[1] + json.data[6]) * 100).toFixed(2) + ' %'
         + '\nMelees : ' + json.data[18]
@@ -59,7 +59,7 @@ module.exports.run = async (bot , msg , args) => {
         + '\nSuicides : ' + json.data[20]
         + '\nK/D : ' + ((json.data[6] + json.data[1]) / (json.data[7] + json.data[2])).toFixed(2)
         + '\nW/L : ' + ((json.data[8] + json.data[3]) / (json.data[9] + json.data[4])).toFixed(2) , true)
-      .addField('*Casual stats*' ,
+      .addField('**Casual stats**' ,
         'Games : ' + (json.data[8] + json.data[9])
         + '\nWins : ' + json.data[8]
         + '\nLosses : ' + json.data[9]
@@ -67,7 +67,7 @@ module.exports.run = async (bot , msg , args) => {
         + '\nDeaths : ' + json.data[7]
         + '\nK/D : ' + (json.data[6] / json.data[7]).toFixed(2)
         + '\nW/L : ' + (json.data[8] / json.data[9]).toFixed(2) , true)
-      .addField('*Ranked stats*' ,
+      .addField('**Ranked stats**' ,
           'Games : ' + (json.data[3] + json.data[4])
           + '\nWins : ' + json.data[3]
           + '\nLosses : ' + json.data[4]
@@ -75,23 +75,23 @@ module.exports.run = async (bot , msg , args) => {
           + '\nDeaths : ' + json.data[2]
           + '\nK/D : ' + (json.data[1] / json.data[2]).toFixed(2)
           + '\nW/L : ' + (json.data[3] / json.data[4]).toFixed(2), true)
-      .addField('💣*Bomb stats*' ,
+      .addField('💣**Bomb stats**' ,
         'Games : ' + (json.data[10] + json.data[11])
         + '\nWins : ' + json.data[10]
         + '\nLosses : ' + json.data[11]
         + '\nW/L : ' + (json.data[10] / json.data[11]).toFixed(2) , true)
-      .addField('🛡 *Secure Area stats*' ,
+      .addField('🛡 **Secure Area stats**' ,
         'Games : ' + (json.data[12] + json.data[13])
         + '\nWins : ' + json.data[12]
         + '\nLosses : ' + json.data[13]
         + '\nW/L : ' + (json.data[12] / json.data[13]).toFixed(2) , true)
-      .addField('🤵🏽 *Hostage stats*' ,
+      .addField('🤵🏽 **Hostage stats**' ,
         'Games : ' + (json.data[14] + json.data[15])
         + '\nWins : ' + json.data[14]
         + '\nLosses : ' + json.data[15]
         + '\nW/L : ' + (json.data[14] / json.data[15]).toFixed(2) , true)
         .addBlankField()
-        .addField('*Past Seasons Rank*' ,
+        .addField('**Past Seasons Rank**' ,
         '**Health : **' + rank[json.season6rank] + ' ' + json.season6mmr
         + '\n**Blood Orchid : **' + rank[json.season7rank] + ' ' + json.season7mmr
         + '\n**White Noise : **' + rank[json.season8rank] + ' ' + json.season8mmr
@@ -103,7 +103,7 @@ module.exports.run = async (bot , msg , args) => {
         + '\n**Phantom Sight : **' + rank[json.season14rank] + ' ' + json.season14mmr
         + '\n**Ember Rise : **' + rank[json.season15rank] + ' ' + json.season15mmr
         + '\n**Shifting Tides : **' + rank[json.season16rank] + ' ' + json.season16mmr , true)
-        .addField('*Current Season Ranking*' ,
+        .addField('**Current Season Ranking**' ,
         '**Current Rank : **' + rank[json.p_currentrank] + " " + json.p_currentmmr
         + '**\nMax Rank : **' + rank[json.p_maxrank] + " " + json.p_maxmmr , true);
 
