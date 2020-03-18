@@ -5,6 +5,7 @@ module.exports.run = (bot , msg, args) => {
 
   let operators = r6.operatordata;
   let op = args[0];
+  let opName = op.toLowerCase();
   let opnum; // Number that represtents the operator
 
   if (!op) {
@@ -13,7 +14,7 @@ module.exports.run = (bot , msg, args) => {
   }
 
   try {
-    switch(op) { //Assigning numbers to operators
+    switch(opName) { //Assigning numbers to operators
       case 'sledge' : opnum = 1; break;
       case 'thatcher' : opnum = 2; break;
       case 'smoke' : opnum = 3; break;
@@ -64,6 +65,10 @@ module.exports.run = (bot , msg, args) => {
       case 'warden' : opnum = 48; break;
       case 'amaru' : opnum = 49; break;
       case 'goyo' : opnum = 50; break;
+      case 'kali' : opnum = 51; break;
+      case 'wamai' : opnum = 52; break;
+      case 'iana' : opnum = 53; break;
+      case 'oryx' : opnum = 54; break;
     } 
 
     let ops = operators[opnum];
