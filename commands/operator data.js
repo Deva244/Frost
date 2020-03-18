@@ -103,12 +103,11 @@ module.exports.run = (bot , msg, args) => {
           if (r.emoji.name == '🇱') {
             const loadout = new Discord.RichEmbed()
             .setTitle(`${ops.nickname}'s Loadout`)
-            .setDescription("Some of the loadouts are outdated after the recent patch.")
             .setImage(`${ops.loadout}`)
             .setThumbnail(`${ops.icon}`)
             .setColor(`${ops.color}`)
             .setTimestamp()
-            .setFooter('Loadouts are taken from Rainbow Six Wiki, some loadouts are outdated.')
+            .setFooter('Loadouts are taken from Rainbow Six Wiki.')
             .addField('Armor' , `${ops.armor}` , true)
             .addField('Speed' , `${ops.speed}` , true);
             react.edit(loadout);
