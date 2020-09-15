@@ -164,7 +164,7 @@ bot.on('message', async msg => {
     // Frost Trap Trigger
     if (msg.content.includes('t') && !msg.content.startsWith('!') && !msg.isMentioned('567136594495143987')) {
       const num = randomWhole(1,100);
-      if (num >= 90 && num <= 100) {
+      if (num >= 98 && num <= 100) {
         await msg.react('577249791113953292');
         await msg.channel.send(`**${msg.author.username}** walked into a trap <:Frosty:603005282234138624>`);
       }
