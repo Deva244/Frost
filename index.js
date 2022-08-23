@@ -80,7 +80,7 @@ bot.on('message', async msg => {
     let rate = randomWhole(1,100);
   
     // JoJo copypasta triggers
-    if (rate >= 90) {
+    if (rate >= 98) {
       if (content.includes('kira')) {
         msg.channel.send(copypasta.kira);
         return;
@@ -128,17 +128,20 @@ bot.on('message', async msg => {
     //Bot Mentioned
     if (msg.isMentioned('567136594495143987')) {
       await msg.react('603005282150383659');
-      if (msg.content.includes('no') || msg.content.includes('ya') || msg.content.includes('u') || msg.content.includes('you') || msg.content.includes('kys')) {
-        msg.channel.send('<:nou:571503160464637956>');
-        return;
-      }
-      else if (msg.content.includes('fuck')) {
-        msg.channel.send('<:KannaFu:571518019377823757>');
-        return;
-      }
-      else if (msg.content.includes('tezk')) {
-        msg.channel.send(`${msg.author} tezk enta`);
-        return;
+      let trigger_chance = randomWhole(1,100);
+      if (trigger_chance >= 71) {
+        if (msg.content.includes('no') || msg.content.includes('ya') || msg.content.includes('u') || msg.content.includes('you') || msg.content.includes('kys')) {
+          msg.channel.send('<:nou:571503160464637956>');
+          return;
+        }
+        else if (msg.content.includes('fuck')) {
+          msg.channel.send('<:KannaFu:571518019377823757>');
+          return;
+        }
+        else if (msg.content.includes('tezk')) {
+          msg.channel.send(`${msg.author} tezk enta`);
+          return;
+        }
       }
     }
     //F reaction
@@ -189,7 +192,7 @@ bot.on('message', async msg => {
     // Self Destruct
     if (msg.content.includes('kill me') || msg.content.includes('end me')) {
       let rng = randomWhole(1,100);
-      if (rng >= 1 && rng < 90) {
+      if (rng >= 96) {
         let rng2 = randomWhole(1,2);
         const embed = new Discord.RichEmbed().setTitle(`${msg.author.username} Has self destructed`).setImage('https://media.giphy.com/media/Bloycira6ehGw/giphy.gif');
         const embed2 = new Discord.RichEmbed().setTitle(`${msg.author.username} Has self destructed`).setImage('https://media.giphy.com/media/dZw29nwrIPcv6/giphy.gif');
@@ -208,7 +211,7 @@ bot.on('message', async msg => {
     // Pls kill trigger
     if (msg.content.startsWith('pls kill')) {
       const num = randomWhole(1,100);
-      if (num >= 30 && num <= 100) {
+      if (num >= 60 && num <= 100) {
         msg.channel.send('<:KannaSip:572034399483461632>');
       }
       return;
