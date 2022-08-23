@@ -17,7 +17,7 @@ module.exports.run = (bot , msg , args) => {
       let act = msg.content.slice(5);
 
       if (!args[0]) {
-        msg.channel.send("Enter an activity to be set!"); return;
+        msg.channel.send("You have to enter an activity to be set!, e.g. !act [activity]"); return;
       } 
 
       msg.channel.send('Enter the type of the activity');
@@ -28,7 +28,7 @@ module.exports.run = (bot , msg , args) => {
 
       .then(collected => {
 
-        let collectedType = collected.first().content;
+        let collectedType = collected.first();
         let type = collectedType.toUpperCase();
 
         if (type != 'PLAYING' && type != 'WATCHING' && type != 'STREAMING' && type != 'LISTENING') {
@@ -67,7 +67,6 @@ module.exports.run = (bot , msg , args) => {
     msg.channel.send("Something went wrong!");
     console.log(err);
   }
-
 
 }
 
